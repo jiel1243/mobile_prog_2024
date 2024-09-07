@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> My First Java Script</h2>
+
+        <button type = "button"
+        onclick="document.getElementById('demo').innerHTML = Date()">Click me</button>
+
+        <p id = "demo"></p>
+
+        <h1>The Window Object</h1>
+        <h2>The prompt</h2>
+
+        <p>Click the button to demonstrate the prompt box.</p>
+
+        <button onclick = "first()">click me</button>
+        <button onclick="myHobbies()">clickkawkdaw me</button>
+        <br>
+        <br>
+        <button onclick="myFavdrink()">Testingin moko</button>
+        
+
+        <script>
+            function first(){
+                let person = prompt("Please enter your name");
+                if(person != null)
+            {
+                document.getElementById("demo").innerHTML = "Hello" + person + "!How are you?";
+            }
+            }
+
+            function myHobbies(){
+               let hobby = ['reading', 'programming', 'cooking'];
+                document.getElementById('demo').innerHTML = "My Hobbies are" + hobby;
+            }
+            function myFavdrink(){
+                let text;
+                let Favdrink = prompt("PLease enter your favorite drink");
+                switch(Favdrink){
+                    case "coca-cola":
+                        text = "Sarap";
+                        break;
+                    case "RED HORSE":
+                        text = "LASING";
+                        break;
+                    case "GIN":
+                        text = "LUNGANGE";
+                        break;
+                    default:
+                        text = "ANO YUNNN?";
+                }
+                document.getElementById('demo').innerHTML = text;
+            }
+
+
+        </script>
+    </body>
+</html>
